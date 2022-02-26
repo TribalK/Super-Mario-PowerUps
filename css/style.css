@@ -1,0 +1,177 @@
+/* Box Model Hack */
+* {
+     box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+html {
+    font-size: 62.5%;
+    min-height: 100%;
+}
+body {
+  text-align: center;
+  font-family: 'Merriweather', serif;
+  font-weight: 300;
+  font-style: italic;
+  background-image: url('../img/Mushroom-Kingdom.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h1, h2 {
+  font-size: 3.5rem;
+  margin: 1.5% auto;
+}
+
+h1 {
+  font-size: 6.6rem;
+}
+
+img {
+  width: 12%;
+}
+
+span {
+  font-size: 10em;
+  color: rgb(255,0,0);
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}
+/******************************************
+/* LAYOUT
+/*******************************************/
+.powerUps {
+    width: 80%;
+    margin: 0 10%;
+}
+
+.Mario {
+    margin-top: 2%;
+}
+
+.powerUps img {
+  width: 12em;
+  object-fit: cover;
+}
+
+.Mario img {
+  width: 20em;
+}
+
+.powerUps ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  justify-content: center;
+  margin: 0 25%;
+  padding: 0;
+  border: 4px solid red;
+  background-color: rgba(255,228,194,0.8);
+  border-radius: 15%;
+}
+
+.powerUps ul li {
+  padding: 2vh 2.5vh;
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+#tallMario {
+  width: 30em;
+}
+#penguinMario {
+  width: 30em;
+}
+#starMario {
+  width: 40em;
+}
+#fireMario {
+  width: 40em;
+}
+#tanookiMario {
+  width: 32em;
+}
+#boomerangMario {
+  width: 32em;
+}
+
+@media all and (min-width: 401px) and (max-width: 780px) {
+  h1 {
+    font-size: 4.5em;
+  }
+
+  h2 {
+    font-size: 2.0em;
+  }
+
+  .powerUps ul {
+    margin: 0 auto;
+  }
+
+  .Mario {
+    margin-top: 8%;
+  }
+}
+
+@media all and (max-width: 400px) {
+  h1 {
+    font-size: 3.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  .powerUps ul {
+    margin: 0 auto;
+  }
+
+  .powerUps img {
+    width: 8em;
+  }
+
+  .Mario {
+    margin-top: 8%;
+  }
+
+  span {
+    font-size: 4em;
+  }
+
+  #fireMario {
+    width: 30em;
+  }
+
+  #starMario {
+    width: 30em;
+  }
+
+  #tanookiMario {
+    width: 28em;
+  }
+
+  #boomerangMario {
+    width: 24em;
+  }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="Your description goes here">
+    	<meta name="keywords" content="one, two, three">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<title>Super Mario Power-Ups</title>
+
+			<!-- external CSS link -->
+			<link rel="preconnect" href="https://fonts.googleapis.com">
+			<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+			<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+			<link rel="stylesheet" href="css/normalize.css">
+			<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section>
+				<h1>Mario is in need of a Power-Up!</h1>
+				<h2>Select a power-up below to give to Mario.</h2>
+		</section>
+
+		<main>
+			<section class="powerUps">
+				<ul>
+						<li><img id="mushroom" class="power" src="img/mushroom.png" alt="Mushroom"></li>
+						<li><img id="fire" class="power" src="img/fire_flower.png" alt="Fire Flower"></li>
+						<li><img id="penguin" class="power" src="img/penguin-suit.png" alt="Penguin Suit"></li>
+						<li><img id="star" class="power" src="img/super-star.png" alt="Invincibility Star"></li>
+						<li><img id="leaf" class="power" src="img/super-leaf.png" alt="Super Leaf"></li>
+						<li><img id="poison" class="power" src="img/poison-mushroom.png" alt="Poison Mushroom"></li>
+						<li><img id="propeller" class="power" src="img/propeller-mushroom.png" alt="Propeller Mushroom"></li>
+						<li><img id="boomerang" class="power" src="img/boomerang-flower.png" alt="Boomerang Flower"></li>
+				</ul>
+			</section>
+		</main>
+		<section class="Mario">
+				<img id="smallMario" class="mario_figure" src="img/Small_Mario.png" alt="Small Mario">
+				<img id="tallMario" class="hidden mario_figure" src="img/Normal_Mario.png" alt="Normal Mario">
+				<img id="fireMario" class="hidden mario_figure" src="img/Fire_Mario.png" alt="Fire Mario">
+				<img id="penguinMario" class="hidden mario_figure" src="img/mario-penguin.png" alt="Penguin Mario">
+				<img id="starMario" class="hidden mario_figure" src="img/Invincible_Mario.png" alt="Invincible Mario">
+				<img id="tanookiMario" class="hidden mario_figure" src="img/Tanooki-Mario.png" alt="Tanooki Mario">
+				<img id="poisonMario" class="hidden mario_figure death" src="#" alt="Poisoned Mario">
+				<img id="propellerMario" class="hidden mario_figure" src="img/Propeller_Mario.png" alt="Propeller Mario">
+				<img id="boomerangMario" class="hidden mario_figure" src="img/Boomerang_Mario.png" alt="Boomerang Mario">
+				<span id="screamAtUser"></span>
+		</section>
+
+		<section>
+				<audio id="powerUpAudio" src="audio/power_up.mp3"></audio>
+				<audio id="deathAudio" src="audio/death.mp3"></audio>
+				<audio id="starAudio" src="audio/star_theme.mp3"></audio>
+		</section>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

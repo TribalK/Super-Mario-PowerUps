@@ -11,12 +11,15 @@ function playAudio(audioType) {
 
   if(audioType === 1) {
     audio = document.getElementById("powerUpAudio");
+    audio.volume = 0.4;
   }
   else if(audioType === 2) {
     audio = document.getElementById("starAudio");
+    audio.volume = 1.0;
   }
   else {
     audio = document.getElementById("deathAudio");
+    audio.volume = 0.6;
   }
 
   audio.currentTime = 0;
